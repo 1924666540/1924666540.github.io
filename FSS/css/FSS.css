@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+}
+
+.auto-img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.list li {
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.list li.page1 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.list li.page2 {
+  background-color: #fefefe;
+}
+
+.list li.page3 {
+  background-color: #ed6567;
+  padding: 62px 120px;
+  box-sizing: border-box;
+}
+
+.list li.page4 {
+  background-color: #fefefe;
+  box-sizing: border-box;
+}
+
+.list li.page5 {
+  background-color: #5ca4ec;
+}
+
+.list li.page6 {
+  background-color: #fefefe;
+}
+
+.list li.page7 {
+  background-color: #763fd5;
+}
+
+.move-bg {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+
+.move-bg div {
+  height: 100vh;
+  width: 50%;
+  float: left;
+}
+
+.move-bg .move-bg-left {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_left_pen.png") no-repeat;
+  background-position: 50px 100px;
+}
+
+.move-bg .move-bg-right {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_right_pen.png") no-repeat;
+  background-position: -750px 30px;
+}
+
+.page1 .tiile-main {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 35vh;
+  left: 230px;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_main_title.png") no-repeat;
+}
+
+.page1 .title-second {
+  height: 10vh;
+  width: 100%;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_main_title1.png") no-repeat;
+  position: absolute;
+  top: 50vh;
+  left: 150px;
+}
+
+.page1 .release {
+  width: 16%;
+  height: 9vh;
+  position: absolute;
+  top: 65vh;
+  left: 560px;
+  border-radius: 10vh;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_button.png") no-repeat;
+  background-position: 0 -9vh;
+  cursor: pointer;
+}
+
+.page1 .release:hover {
+  background-position: 0 0vh;
+}
+
+.page2 div {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.page2 .pc {
+  z-index: 3;
+
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg2_pc.png") no-repeat;
+  background-position: 200px 130px;
+  opacity: 0;
+  left: -100px;
+}
+
+.page2 .title-icon {
+  transform: scale(0.3);
+  opacity: 0;
+  transition: all .5s;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/big.png") no-repeat;
+  background-position: 480px 130px;
+
+}
+
+.page2 .title-icon .small-bg {
+  transform: scale(0);
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/little.png") no-repeat;
+  background-position: 575px 230px;
+}
+
+.page2 .phone {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg2_phone.png") no-repeat;
+  background-position: 200px 130px;
+  opacity: 0;
+  left: 100px;
+}
+
+.page3 div {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.page3 .page3-title {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg3_01.png") no-repeat;
+  top: 120px;
+  opacity: 0;
+}
+
+.page3 .page3-text {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg3_02.png") no-repeat;
+  top: 80px;
+  opacity: 0;
+}
+
+.page3 .page3-icon {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg3_people.png") no-repeat;
+  top: 120px;
+  opacity: 0;
+}
+
+.page4 div {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 190px;
+  top: 100px;
+}
+
+.page4 .page4-bg1 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_linepic.png") no-repeat;
+  transform: scale(0);
+  transition: all .5s;
+}
+
+.page4 .page4-bg2 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_01.png") no-repeat;
+  transform: scale(0);
+  transition: all .5s;
+}
+
+.page4 .page4-bg3 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_icon02.png") no-repeat;
+  top: -200px;
+
+}
+
+.page4 .page4-bg4 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_icon01.png") no-repeat;
+  top: 400px;
+}
+
+.page4 .page4-bg5 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_computer.png") no-repeat;
+  top: 200px;
+  opacity: 0;
+}
+
+.page4 .page4-bg6 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_people.png") no-repeat;
+  top: 200px;
+  opacity: 0;
+}
+
+.page5 div {
+  position: absolute;
+  top: 80px;
+  left: 160px;
+  width: 100%;
+  height: 100vh;
+}
+
+.page5 .page5-bg0 {
+  width: 430px;
+  height: 430px;
+  border: 1px dashed #fff;
+  border-radius: 50%;
+  top: 150px;
+  left: 700px;
+}
+
+.page5 .page5-bg1 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_01.png") no-repeat;
+  top: 500px;
+  opacity: 0;
+}
+
+.page5 .page5-bg2 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_people.png") no-repeat;
+  top: 300px;
+  opacity: 0;
+}
+
+.page5 .page5-bg3 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_pc.png") no-repeat;
+  top: 200px;
+  opacity: 0;
+}
+
+.page5 .page5-bg4 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_colorpeople.png") no-repeat;
+  left: 500px;
+  opacity: 0;
+}
+
+.page5 .page5-bg5 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_move.png") no-repeat;
+  left: 500px;
+  opacity: 0;
+}
+
+.page6 div {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 60px;
+  left: 200px;
+}
+
+.page6 .page6-bg1 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg6_main.png") no-repeat;
+  left: 100px;
+  top: 100px;
+  transform: scale(0);
+  transition: transform 1s;
+}
+
+.page6 .page6-bg2 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg6_01.png") no-repeat;
+  transform: scale(0);
+  transition: transform .5s;
+}
+
+.page6 .page6-bg3 {
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_people.png") no-repeat;
+  top: 500px;
+}
+
+.page7 p {
+  color: #f2f2f2;
+  font-size: 38px;
+  top: 130px;
+  left: 450px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.page7 .page7-code {
+  width: 270px;
+  height: 300px;
+  margin: 50px;
+  position: absolute;
+  left: 230px;
+  top: 600px;
+  opacity: 0;
+}
+
+.page7 .page7-code div {
+  font-size: 16px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.page7 .page7-btn {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  left: 0;
+  top: 300px;
+  opacity: 0
+}
+
+.page7 .page7-btn .page7-btn1 {
+  width: 310px;
+  height: 79px;
+  border-radius: 79px;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg7_gologin.png") no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  top: 250px;
+  left: 710px;
+  cursor: pointer;
+}
+
+.page7 .page7-btn .page7-btn2 {
+  float: left;
+  width: 206px;
+  height: 58px;
+  border-radius: 58px;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg7_gologin.png") no-repeat;
+  background-position: -310px -6px;
+  position: absolute;
+  top: 420px;
+  left: 650px;
+  cursor: pointer;
+}
+
+.page7 .page7-btn .page7-btn3 {
+  float: left;
+  width: 206px;
+  height: 58px;
+  border-radius: 58px;
+  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg7_gologin.png") no-repeat;
+  background-position: -534px -6px;
+  position: absolute;
+  top: 420px;
+  left: 880px;
+  cursor: pointer;
+}
+
+.page7-btn .page7-btn1:hover {
+  background-position: 0 -79px;
+}
+
+.page7-btn .page7-btn2:hover {
+  background-position: -310px -77px;
+}
+
+.page7-btn .page7-btn3:hover {
+  background-position: -534px -77px;
+}
+
+ul.nav-list {
+  position: fixed;
+  top: 250px;
+  right: 20px;
+  z-index: 99;
+}
+
+ul.nav-list li {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #36d68e;
+  margin-top: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ul.nav-list li.active {
+  background-color: #36d68e;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>放大镜</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    h3{
+      text-align: center;
+    }
+
+    .content {
+      padding: 50px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .show {
+      width: 350px;
+      height: 350px;
+      background: url('./imgs/a.jpg') no-repeat;
+      margin-top: 10px;
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .layer {
+      width: 100%;
+      height: 350px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      cursor: move;
+    }
+
+    .mark {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      display: none;
+    }
+
+    .icon {
+      width: 350px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .icon .item {
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-right: 10px;
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .icon div.active {
+      border: 1px solid red;
+    }
+
+    .icon .item:last-child {
+      margin-right: 0;
+    }
+
+    .auto-img {
+      width: 100%;
+      display: block;
+    }
+
+    .large {
+      width: 350px;
+      height: 350px;
+      background-color: orange;
+      position: absolute;
+      top: 140px;
+      left: 500px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>点击任意图片后将鼠标移入下图查看放大图</h3>
+  <div class="content">
+
+    <div class="icon">
+      <div class="item">
+        <img class="auto-img" src="./imgs/a.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="auto-img" src="./imgs/b.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="auto-img" src="./imgs/c.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="auto-img" src="./imgs/d.jpg" alt="">
+      </div>
+    </div>
+    <div class="show">
+      <div class="mark"></div>
+      <div class="layer"></div>
+    </div>
+    <div class="large"></div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+
+      $('.item').data('isShow', false);
+
+
+      $('.item').click(function () {
+        $('.show').css({
+          'background': `url('${$(this).find('img').attr('src')}') no-repeat`
+        })
+        if ($(this).data('isShow')) {
+
+          $(this).removeClass('active').data('isShow', false);
+
+          $('.show').hide();
+
+        } else {
+
+          $(this).addClass('active').siblings().removeClass('active');
+
+          $('.show').show();
+
+          $(this).data('isShow', true).siblings().data('isShow', false);
+
+        }
+
+      })
+
+      $('.layer').mouseenter(function () {
+
+        var cale = parseFloat($('.large').css('width')) / parseFloat($('.mark').css('width'));
+
+        $('.mark').show();
+
+        $('.large').show();
+
+        $(this).mousemove(function (e) {
+
+          var left = (e.offsetX - parseFloat($('.mark').css('height')) / 2) < 0 ? 0 : (e.offsetX -
+              parseFloat($('.mark').css('height')) / 2) > parseFloat($('.layer').css('width')) -
+            parseFloat($('.mark').css('width')) ? parseFloat($('.layer').css('width')) - parseFloat($(
+              '.mark').css('width')) : (e.offsetX - parseFloat($('.mark').css('height')) / 2);
+
+          var top = (e.offsetY - parseFloat($('.mark').css('height')) / 2) < 0 ? 0 : (e.offsetY -
+              parseFloat($('.mark').css('height')) / 2) > parseFloat($('.layer').css('height')) -
+            parseFloat($('.mark').css('height')) ? parseFloat($('.layer').css('height')) - parseFloat(
+              $('.mark').css('height')) : (e.offsetY - parseFloat($('.mark').css('height')) / 2);
+
+          $('.large').css({
+
+            'background-image': `${$('.show').css('background-image')} `,
+
+            'background-repeat': `no-rapeat`,
+
+            'background-size': `${parseFloat($('.show').css('width'))*cale}px`
+
+          })
+
+          $('.mark').css({
+
+            'top': top,
+
+            'left': left
+
+          })
+
+          $('.large').css({
+
+            'background-position': `${-left*cale}px ${-top*cale}px`
+
+          })
+
+        })
+
+      })
+
+      $('.layer').mouseleave(function () {
+
+        $('.mark').hide();
+
+        $('.large').hide();
+
+      })
+
+    })
+  </script>
+</body>
+
+</html>

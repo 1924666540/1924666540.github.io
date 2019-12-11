@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>拖放</title>
+  <style>
+    body {
+      background-color: #333;
+    }
+
+    ul {
+      width: 300px;
+      margin: 100px auto;
+      padding: 0;
+      background-color: #fff;
+      position: relative;
+      padding: 20px 0;
+    }
+    ul::before{
+      display: block;
+      content: 'List A';
+      width: 50px;
+      height: 30px;
+      background-color: #ff7373;
+      font-family: roboto, sans-serif;
+      font-weight: lighter;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      padding: 0 10px;
+      position: absolute;
+      top: -20px;
+      left: -10px;
+    }
+
+    ul li {
+      padding: 10px 30px;
+      list-style: none;
+      height: 30px;
+      line-height: 30px;
+      font-family: roboto, sans-serif;
+      font-weight: lighter;
+      cursor: pointer;
+      font-size: 20px;
+      color: #464637;
+      transition: all .3s;
+
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="item" draggable="true">Cano</li>
+    <li class="item" draggable="true">антон</li>
+    <li class="item" draggable="true">корм</li>
+    <li class="item" draggable="true">бегемот</li>
+    <li class="item" draggable="true">валик</li>
+    <li class="item" draggable="true">железосталь</li>
+    <li class="item" draggable="true">кровать</li>
+    <li class="item" draggable="true">краб</li>
+  </ul>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+  <script>
+    var data = 0;
+
+    $('ul li').on('dragstart', function () {
+
+      data = $(event.target).index()
+
+    })
+
+    $('ul li').on('dragover', function (event) {
+      
+      $(this).css({
+
+        backgroundColor: '#ff7373'
+       
+      }).siblings().css({
+
+        backgroundColor: '#fff'
+
+      })
+
+      event.preventDefault()
+
+    })
+
+    $('ul li').on('drop', function (event) {
+
+      $(this).css({
+
+        backgroundColor: '#fff'
+
+      })
+
+      $(this).before($('ul li').eq(data))
+
+    })
+  </script>
+</body>
+
+</html>

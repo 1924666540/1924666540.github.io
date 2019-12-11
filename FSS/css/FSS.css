@@ -27,7 +27,7 @@ ul {
 }
 
 .list li.page1 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1.jpg") no-repeat;
+  background: url("../img/bg1.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -71,12 +71,12 @@ ul {
 }
 
 .move-bg .move-bg-left {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_left_pen.png") no-repeat;
+  background: url("../img/bg1_left_pen.png") no-repeat;
   background-position: 50px 100px;
 }
 
 .move-bg .move-bg-right {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_right_pen.png") no-repeat;
+  background: url("../img/bg1_right_pen.png") no-repeat;
   background-position: -750px 30px;
 }
 
@@ -86,13 +86,13 @@ ul {
   position: absolute;
   top: 35vh;
   left: 230px;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_main_title.png") no-repeat;
+  background: url("../img/bg1_main_title.png") no-repeat;
 }
 
 .page1 .title-second {
   height: 10vh;
   width: 100%;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_main_title1.png") no-repeat;
+  background: url("../img/bg1_main_title1.png") no-repeat;
   position: absolute;
   top: 50vh;
   left: 150px;
@@ -105,7 +105,7 @@ ul {
   top: 65vh;
   left: 560px;
   border-radius: 10vh;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg1_button.png") no-repeat;
+  background: url("../img/bg1_button.png") no-repeat;
   background-position: 0 -9vh;
   cursor: pointer;
 }
@@ -123,7 +123,7 @@ ul {
 .page2 .pc {
   z-index: 3;
 
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg2_pc.png") no-repeat;
+  background: url("../img/bg2_pc.png") no-repeat;
   background-position: 200px 130px;
   opacity: 0;
   left: -100px;
@@ -133,7 +133,7 @@ ul {
   transform: scale(0.3);
   opacity: 0;
   transition: all .5s;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/big.png") no-repeat;
+  background: url("../img/big.png") no-repeat;
   background-position: 480px 130px;
 
 }
@@ -143,12 +143,12 @@ ul {
   opacity: 0;
   transition: all .5s;
   position: absolute;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/little.png") no-repeat;
+  background: url("../img/little.png") no-repeat;
   background-position: 575px 230px;
 }
 
 .page2 .phone {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg2_phone.png") no-repeat;
+  background: url("../img/bg2_phone.png") no-repeat;
   background-position: 200px 130px;
   opacity: 0;
   left: 100px;
@@ -161,19 +161,19 @@ ul {
 }
 
 .page3 .page3-title {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg3_01.png") no-repeat;
+  background: url("../img/bg3_01.png") no-repeat;
   top: 120px;
   opacity: 0;
 }
 
 .page3 .page3-text {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg3_02.png") no-repeat;
+  background: url("../img/bg3_02.png") no-repeat;
   top: 80px;
   opacity: 0;
 }
 
 .page3 .page3-icon {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg3_people.png") no-repeat;
+  background: url("../img/bg3_people.png") no-repeat;
   top: 120px;
   opacity: 0;
 }
@@ -187,36 +187,36 @@ ul {
 }
 
 .page4 .page4-bg1 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_linepic.png") no-repeat;
+  background: url("../img/bg4_linepic.png") no-repeat;
   transform: scale(0);
   transition: all .5s;
 }
 
 .page4 .page4-bg2 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_01.png") no-repeat;
+  background: url("../img/bg4_01.png") no-repeat;
   transform: scale(0);
   transition: all .5s;
 }
 
 .page4 .page4-bg3 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_icon02.png") no-repeat;
+  background: url("../img/bg4_icon02.png") no-repeat;
   top: -200px;
 
 }
 
 .page4 .page4-bg4 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_icon01.png") no-repeat;
+  background: url("../img/bg4_icon01.png") no-repeat;
   top: 400px;
 }
 
 .page4 .page4-bg5 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_computer.png") no-repeat;
+  background: url("../img/bg4_computer.png") no-repeat;
   top: 200px;
   opacity: 0;
 }
 
 .page4 .page4-bg6 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_people.png") no-repeat;
+  background: url("../img/bg4_people.png") no-repeat;
   top: 200px;
   opacity: 0;
 }
@@ -239,31 +239,31 @@ ul {
 }
 
 .page5 .page5-bg1 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_01.png") no-repeat;
+  background: url("../img/bg5_01.png") no-repeat;
   top: 500px;
   opacity: 0;
 }
 
 .page5 .page5-bg2 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_people.png") no-repeat;
+  background: url("../img/bg5_people.png") no-repeat;
   top: 300px;
   opacity: 0;
 }
 
 .page5 .page5-bg3 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_pc.png") no-repeat;
+  background: url("../img/bg5_pc.png") no-repeat;
   top: 200px;
   opacity: 0;
 }
 
 .page5 .page5-bg4 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_colorpeople.png") no-repeat;
+  background: url("../img/bg5_colorpeople.png") no-repeat;
   left: 500px;
   opacity: 0;
 }
 
 .page5 .page5-bg5 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg5_move.png") no-repeat;
+  background: url("../img/bg5_move.png") no-repeat;
   left: 500px;
   opacity: 0;
 }
@@ -277,7 +277,7 @@ ul {
 }
 
 .page6 .page6-bg1 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg6_main.png") no-repeat;
+  background: url("../img/bg6_main.png") no-repeat;
   left: 100px;
   top: 100px;
   transform: scale(0);
@@ -285,13 +285,13 @@ ul {
 }
 
 .page6 .page6-bg2 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg6_01.png") no-repeat;
+  background: url("../img/bg6_01.png") no-repeat;
   transform: scale(0);
   transition: transform .5s;
 }
 
 .page6 .page6-bg3 {
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg4_people.png") no-repeat;
+  background: url("../img/bg4_people.png") no-repeat;
   top: 500px;
 }
 
@@ -335,7 +335,7 @@ ul {
   width: 310px;
   height: 79px;
   border-radius: 79px;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg7_gologin.png") no-repeat;
+  background: url("../img/bg7_gologin.png") no-repeat;
   background-position: 0 0;
   position: absolute;
   top: 250px;
@@ -348,7 +348,7 @@ ul {
   width: 206px;
   height: 58px;
   border-radius: 58px;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg7_gologin.png") no-repeat;
+  background: url("../img/bg7_gologin.png") no-repeat;
   background-position: -310px -6px;
   position: absolute;
   top: 420px;
@@ -361,7 +361,7 @@ ul {
   width: 206px;
   height: 58px;
   border-radius: 58px;
-  background: url("https://www.17sucai.com/preview/312626/2015-04-30/xiaodao/img/bg7_gologin.png") no-repeat;
+  background: url("../img/bg7_gologin.png") no-repeat;
   background-position: -534px -6px;
   position: absolute;
   top: 420px;

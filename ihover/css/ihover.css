@@ -1,0 +1,328 @@
+body {
+  background-color: #ddd;
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.stage {
+  width: 600px;
+  margin: 5px auto;
+  background-color: #fff;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+.stage::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.btnA,
+.btnB {
+  width: 180px;
+  height: 180px;
+  margin: 0 60px;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+}
+.btnA:hover .layer,
+.btnB:hover .layer {
+  opacity: 1;
+}
+.btnA:hover .bor,
+.btnB:hover .bor {
+  transform: rotate(180deg);
+}
+.btnA .layer,
+.btnB .layer {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.btnA .layer .text,
+.btnB .layer .text {
+  width: 150px;
+  padding: 45.5px 15.15px;
+}
+.btnA .layer .text h4,
+.btnB .layer .text h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.btnA .layer .text p,
+.btnB .layer .text p {
+  font-size: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: #bbb;
+}
+.btnA .bor,
+.btnB .bor {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-top: 10px solid #ecab18;
+  border-left: 10px solid #ecab18;
+  border-right: 10px solid #1ad280;
+  border-bottom: 10px solid #1ad280;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.btnA {
+  background: url('../img/2.jpg') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.btnB {
+  background: url('../img/5.jpg') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.btnB:hover .bor {
+  transform: rotate(-180deg);
+}
+.btnB .bor {
+  border-bottom: 10px solid #ecab18;
+  border-right: 10px solid #ecab18;
+  border-left: 10px solid #1ad280;
+  border-top: 10px solid #1ad280;
+}
+.stage2 {
+  position: relative;
+}
+.stage2::after {
+  display: block;
+  clear: both;
+}
+.stage2 .markC {
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.stage2 .markD {
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.stage2 .btn {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.stage2 .btnC {
+  margin: 0 50px;
+  border-radius: 50%;
+  background: url('../img/1.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 0.5s;
+}
+.stage2 .btnC .bor {
+  border: none;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 0 4px 4px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.stage2 .layerC {
+  height: 200px;
+  width: 200px;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  transform: translateX(-200px);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.stage2 .layerC .text {
+  width: 150px;
+  padding: 45.5px 25.15px;
+}
+.stage2 .layerC .text h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.stage2 .layerC .text p {
+  font-size: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  color: #bbb;
+}
+.stage2 .btnD {
+  margin: 0 50px;
+  border-radius: 50%;
+  background: url('../img/7.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 0.5s;
+}
+.stage2 .btnD .bor {
+  border: none;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 0 4px 4px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.stage2 .layerD {
+  height: 200px;
+  width: 200px;
+  z-index: 9;
+  background-color: rgba(26, 74, 114, 0.6);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  transform: translateX(200px);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.stage2 .layerD .text {
+  width: 150px;
+  padding: 45.5px 25.15px;
+}
+.stage2 .layerD .text h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.stage2 .layerD .text p {
+  font-size: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: #bbb;
+}
+.stage3 {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.stage3 .btnE {
+  width: 200px;
+  height: 200px;
+  background: url("../img/6.jpg") no-repeat;
+  border-radius: 50%;
+  transform: translateX(50px) translateY(-200px);
+  transition: all 0.5s;
+}
+.stage3 .btnE .bor {
+  border: none;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 0 4px 4px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.stage3 .layerE {
+  height: 200px;
+  width: 200px;
+  z-index: 9;
+  margin: 0 50px;
+  background-color: #333333;
+  transform: translateX(-250px);
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.stage3 .layerE .text {
+  width: 150px;
+  padding: 45.5px 25.15px;
+}
+.stage3 .layerE .text h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.stage3 .layerE .text p {
+  font-size: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  color: #bbb;
+}
+.stage3 .markE {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+.stage3 .btnF {
+  width: 200px;
+  height: 200px;
+  background: url("../img/4.jpg") no-repeat;
+  border-radius: 50%;
+  transform: translateX(350px) translateY(-600px);
+  transition: all 0.5s;
+}
+.stage3 .btnF .bor {
+  border: none;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 0 4px 4px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.stage3 .layerF {
+  height: 200px;
+  width: 200px;
+  z-index: 9;
+  margin: 0 50px;
+  background-color: #333333;
+  transform: translateX(550px) translateY(-400px);
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.stage3 .layerF .text {
+  width: 150px;
+  padding: 45.5px 25.15px;
+}
+.stage3 .layerF .text h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.stage3 .layerF .text p {
+  font-size: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  color: #bbb;
+}
+.stage3 .markF {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=./ihover.css.map */

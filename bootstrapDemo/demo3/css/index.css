@@ -1,0 +1,667 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.auto-img {
+  width: 100%;
+  display: block;
+}
+.header {
+  padding: 10px 0;
+  overflow: hidden;
+}
+.header .logo {
+  box-sizing: border-box;
+}
+.header .contact {
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  overflow: hidden;
+  color: #666;
+}
+.header .contact span {
+  display: block;
+  float: left;
+}
+.header .contact .title {
+  font-size: 14px;
+  text-align: center;
+}
+.header .contact .colon {
+  font-size: 14px;
+}
+.header .contact .number {
+  font-size: 14px;
+  color: #d5231b;
+}
+.header .menu-list {
+  overflow: hidden;
+}
+.header .menu-list li {
+  float: right;
+  margin: 0 15px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header .menu-list li:hover {
+  color: #d5231b;
+}
+.header .meun-btn span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 3px auto;
+  background-color: #ddd;
+}
+.header .menu-small {
+  width: 40%;
+  height: 100vh;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-right: none;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  right: -40%;
+  transition: all 0.3s;
+}
+.header .menu-small .top {
+  width: 100%;
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  left: 0;
+}
+.header .menu-small .top .close {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+.header .menu-small .top .close span {
+  height: 3px;
+  width: 80%;
+  display: block;
+  background-color: #000;
+}
+.header .menu-small .top .close span:nth-child(1) {
+  transform: rotate(45deg) translateX(12px) translateY(7px);
+}
+.header .menu-small .top .close span:nth-child(2) {
+  transform: rotate(-45deg) translateX(-5px) translateY(10px);
+}
+.header .menu-small .content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+.header .menu-small .content li {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+.header .menu-small .content li:hover {
+  background-color: #d5231b;
+  color: #fff;
+  transition: all 0.3s;
+}
+.aboutUs .paragraph {
+  padding: 50px 0;
+}
+.aboutUs .paragraph .title .line {
+  width: 100px;
+  height: 3px;
+  background-color: #d5231b;
+}
+.aboutUs .paragraph .title h5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.aboutUs .paragraph .title .subhead {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666666;
+}
+.aboutUs .paragraph .text p {
+  line-height: 26px;
+  font-size: 12px;
+  margin: 30px 0;
+  color: #666666;
+}
+.aboutUs .paragraph .slogan p:nth-child(2) {
+  font-size: 12px;
+  margin: 20px 0;
+}
+.aboutUs .server .card {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background: #f4f4f4;
+}
+.aboutUs .server .card .img {
+  box-sizing: border-box;
+  padding: 0 36px;
+}
+.aboutUs .server .card p {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+.aboutUs .mutual {
+  padding: 50px 0;
+}
+.aboutUs .mutual .top {
+  background-color: #d5231b;
+  display: flex;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.aboutUs .mutual .top .logo {
+  flex: 1;
+  box-sizing: border-box;
+}
+.aboutUs .mutual .top .content {
+  padding: 0 20px;
+  flex: 5;
+  color: #fff;
+}
+.aboutUs .mutual .top .content .text {
+  margin-left: 20px;
+  display: block;
+  float: left;
+}
+.aboutUs .mutual .top .content .text h6 {
+  font-size: 20px;
+}
+.aboutUs .mutual .top .content .text p {
+  font-size: 12px;
+}
+.aboutUs .mutual .form div {
+  width: 100%;
+  padding: 0 50px;
+  margin-top: 40px;
+}
+.aboutUs .mutual .form div input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+.aboutUs .mutual .form .feedback textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+.aboutUs .mutual .form .submit input {
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+.case .title h5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.case .title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+.case .labels {
+  padding-top: 30px;
+}
+.case .labels ul {
+  overflow: hidden;
+}
+.case .labels ul li {
+  float: left;
+  color: #333;
+  font-weight: normal;
+  background-color: #f4f4f4;
+  padding: 5px;
+  margin: 0 5px;
+}
+.case .img {
+  margin: 10px 0;
+  position: relative;
+}
+.case .img:hover .mask {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.case .img .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  opacity: 0;
+  transform: rotateY(-180deg);
+  transition: all 0.3s ease;
+  background: rgba(213, 35, 27, 0.7);
+}
+.case .img .mask .border {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  padding-top: 25%;
+}
+.case .img .mask .border p {
+  text-align: center;
+  color: #fff;
+}
+.case .img .mask .border p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+}
+.case .btn {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0;
+}
+.case .btn span {
+  width: 20%;
+  height: 30px;
+  padding: 10px;
+  line-height: 30px;
+  box-sizing: content-box;
+  border: 2px solid #000;
+}
+.youshi .cards .card {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  color: #666;
+  transition: all 0.3s;
+  position: relative;
+}
+.youshi .cards .card:hover {
+  background-color: #d5231b;
+}
+.youshi .cards .card:hover h6 {
+  color: #fff;
+}
+.youshi .cards .card:hover p {
+  color: #fff;
+}
+.youshi .cards .card:hover .border {
+  display: block;
+}
+.youshi .cards .card .icon {
+  padding: 0 120px;
+}
+.youshi .cards .card h6 {
+  color: #000;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.youshi .cards .card p {
+  font-size: 12px;
+  padding: 0 20px;
+}
+.youshi .cards .card .border {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+.youshi .cards:nth-child(1) .card:hover {
+  background-color: #d5231b;
+}
+.youshi .cards:nth-child(1) .card:hover h6 {
+  color: #fff;
+}
+.youshi .cards:nth-child(1) .card:hover p {
+  color: #fff;
+}
+.youshi .cards:nth-child(1) .card:hover .icon img {
+  content: url(../img/ico-zhifu-b.svg);
+}
+.youshi .cards:nth-child(1) .card:hover .border {
+  display: block;
+}
+.youshi .cards:nth-child(2) .card:hover .icon img {
+  content: url(../img/ico-fujia-b.svg);
+}
+.youshi .cards:nth-child(3) .card:hover .icon img {
+  content: url(../img/ico-jianguan-b.svg);
+}
+.youshi .cards:nth-child(4) .card:hover .icon img {
+  content: url(../img/ico-zhibao-b.svg);
+}
+.youshi .img {
+  margin-top: 10px;
+}
+.team {
+  padding: 50px 0;
+  position: relative;
+}
+.team .row {
+  background-color: #f4f4f4;
+}
+.team .container .carousel-control {
+  background: none;
+  height: 10%;
+  margin: auto;
+  width: 5%;
+  background-color: #666;
+}
+.team .container .carousel-control.left {
+  left: 40px;
+}
+.team .container .carousel-control.right {
+  right: 40px;
+}
+.team .title {
+  background-color: #fff;
+  padding: 20px 0 0 50px;
+  margin-left: -30px;
+}
+.team .title p {
+  width: 20%;
+  height: 3px;
+  background-color: #d5231b;
+}
+.team .title h5 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.team .title h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  margin: 0;
+  padding: 10px 0;
+}
+.team .content {
+  color: #666;
+  margin-left: -30px;
+  padding: 20px 10px 20px 50px;
+}
+.team .content h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.team .content h6 {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.team .content p {
+  line-height: 24px;
+}
+.team .content p.honor {
+  margin: 20px 0;
+}
+.team .content .btn {
+  width: 30%;
+  background-color: #d5231b;
+  color: #fff;
+  margin-top: 30px;
+}
+.blog {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+.blog .title {
+  position: relative;
+}
+.blog .title p {
+  width: 7%;
+  height: 4px;
+  background-color: #d5231b;
+}
+.blog .title h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.blog .title h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  margin: 0;
+  padding: 10px 0;
+}
+.blog .title .btn {
+  background-color: #d5231b;
+  width: 30%;
+  height: 35%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.blog .cards .card {
+  border: 3px solid #dedede;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+.blog .cards .card:hover {
+  border: 3px solid #d5231b;
+}
+.blog .cards .card .content {
+  padding: 20px;
+  color: #666;
+}
+.blog .cards .card .content h6 {
+  font-weight: bold;
+  color: #000;
+}
+.blog .cards .card .content p {
+  font-size: 12px;
+}
+.blog .cards .card .content .visit {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.blog .cards .card .content .visit li {
+  float: left;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.blog .cards .card .content .visit li:nth-child(3) {
+  float: right;
+  text-align: right;
+  margin-right: 0;
+}
+.contactUs {
+  padding: 50px 0;
+}
+.contactUs .title p {
+  width: 20%;
+  height: 4px;
+  background-color: #d5231b;
+}
+.contactUs .title h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.contactUs .title h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  margin: 0;
+  padding: 10px 0;
+}
+.contactUs .content {
+  color: #666;
+  padding: 10px 0;
+}
+.contactUs .fenxiang {
+  padding-bottom: 10px;
+}
+.contactUs .fenxiang p {
+  font-weight: bold;
+}
+.contactUs .fenxiang .icons {
+  padding: 5px 0;
+}
+.contactUs .fenxiang .icons i {
+  color: #666;
+  margin-right: 10px;
+}
+.footer {
+  padding: 80px 0;
+  background-color: #000;
+}
+.footer .left {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer .left .logo {
+  width: 30%;
+  margin: 0 auto;
+}
+.footer .left p {
+  width: 80%;
+  color: #999;
+  padding: 50px 0;
+  line-height: 25px;
+  margin: 0 auto;
+}
+.footer .left ul {
+  width: 80%;
+  color: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.footer .left ul li {
+  width: 25%;
+  float: left;
+  margin: 5px;
+}
+.footer .right {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+.footer .right h6 {
+  font-size: 20px;
+}
+.footer .right h5 {
+  color: #d5231b;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.footer .right p {
+  font-size: 12px;
+}
+.footer .right p:nth-of-type(2) {
+  color: #999;
+  padding-top: 30px;
+}
+.to-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: red;
+  padding: 5px;
+  cursor: pointer;
+}
+@media (min-width: 414px) {
+  .youshi .cards .card .icon {
+    padding: 0 150px;
+  }
+}
+@media (min-width: 768px) {
+  .header .contact .title {
+    font-size: 14px;
+    width: 40px;
+  }
+  .header .contact .colon {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .header .contact .number {
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .header .meun-btn {
+    margin: 10px auto;
+  }
+  .mutual .top .content::before {
+    margin-top: 30px;
+  }
+  .mutual .top .content .text {
+    margin-top: 10px;
+  }
+  .youshi .cards .card .icon {
+    padding: 0 120px;
+  }
+  .blog .title .btn {
+    width: 15%;
+  }
+  .footer .right {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .header .contact {
+    padding: 5px 0;
+  }
+  .header .contact .colon {
+    font-size: 30px;
+  }
+  .header .contact .number {
+    font-size: 25px;
+  }
+  .header .meun-btn {
+    margin: 20px 0;
+  }
+  .aboutUs .server .card .img {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .aboutUs .mutual .top .content::before {
+    margin-top: 30px;
+  }
+  .aboutUs .mutual .top .content .text {
+    margin-top: 20px;
+  }
+  .youshi .cards .card .icon {
+    padding: 0 60px;
+  }
+  .blog .title .btn {
+    width: 10%;
+  }
+  .footer .left {
+    text-align: left;
+  }
+  .footer .left .logo {
+    margin: 0;
+  }
+  .footer .left p {
+    margin: 0;
+  }
+  .footer .left ul {
+    margin: 0;
+  }
+  .footer .right {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=./index.css.map */

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>loading</title>
+  <style>
+    body {
+      margin: 0;
+      height: auto;
+      background: linear-gradient(135deg, #3023ae 0%, #c86dd7 100%);
+
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .stage {
+      width: 100%;
+      position: relative;
+
+    }
+
+    h4 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .css3-animate {
+      position: relative;
+      height: 600px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+
+    }
+
+    .box1 {
+      background-color: #1abc9c;
+      padding: 70px 0;
+      box-sizing: border-box;
+      position: absolute;
+      left: 575px;
+      top: 200px;
+
+    }
+
+    .small {
+      width: 60px;
+      height: 60px;
+      margin: 0 70px;
+      position: relative;
+
+    }
+
+    .smallbox {
+      width: 9px;
+      height: 60px;
+      background-color: #fff;
+      border-radius: 3px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    div.smallbox:nth-child(1) {
+      animation: mymove1 .5s infinite;
+      left: 3px;
+    }
+
+    div.smallbox:nth-child(2) {
+      animation: mymove2 .5s infinite;
+      left: 15px;
+    }
+
+    div.smallbox:nth-child(3) {
+      animation: mymove3 .5s infinite;
+      left: 27px;
+    }
+
+    div.smallbox:nth-child(4) {
+      animation: mymove4 .5s infinite;
+      left: 39px;
+    }
+
+    @keyframes mymove1 {
+      0% {
+        height: 20px;
+      }
+
+      25% {
+        height: 60px;
+      }
+
+      50% {
+        height: 0px;
+      }
+
+      75% {
+        height: 40px;
+      }
+
+      100% {
+        height: 20px;
+      }
+    }
+
+    @keyframes mymove2 {
+      0% {
+        height: 5px
+      }
+
+      50% {
+        height: 20px;
+      }
+
+      75% {
+        height: 40px;
+      }
+
+      100% {
+        height: 15px;
+      }
+    }
+
+    @keyframes mymove3 {
+      0% {
+        height: 0px
+      }
+
+      50% {
+        height: 40px;
+      }
+
+      75% {
+        height: 20px;
+      }
+
+      100% {
+        height: 30px;
+      }
+    }
+
+    @keyframes mymove4 {
+      0% {
+        height: 10px
+      }
+
+      50% {
+        height: 20px;
+      }
+
+      75% {
+        height: 55px;
+      }
+
+      100% {
+        height: 25px;
+      }
+    }
+
+    .box2 {
+      background-color: #3498db;
+      position: absolute;
+      left: 375px;
+      top: 0;
+    }
+
+    .ring {
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 0 0px 3px rgba(255, 255, 255, .3) inset;
+      position: absolute;
+      top: 70px;
+      left: 70px;
+      border-radius: 50%;
+    }
+
+    .ring2 {
+      width: 60px;
+      height: 60px;
+      border-top: 3px solid rgba(255, 255, 255, 1);
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 70px;
+      left: 70px;
+      box-sizing: border-box;
+      animation: run 1s linear 0s infinite;
+
+
+    }
+
+    @keyframes run {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+
+    .box3 {
+
+      background-color: #e74c3c;
+      position: absolute;
+      left: 575px;
+      top: 0;
+    }
+
+    .box3 .circle {
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 50%;
+      top: 90px;
+    }
+
+    .box3 .circle1 {
+
+      left: 60px;
+      animation: scal1 1s linear 0s infinite;
+    }
+
+    .box3 .circle2 {
+      left: 90px;
+      animation: scal2 1s linear 0s infinite;
+    }
+
+    .box3 .circle3 {
+
+      left: 120px;
+      animation: scal1 1s linear 0s infinite;
+    }
+
+    @keyframes scal1 {
+      0% {
+        transform: scale(.5);
+        opacity: .5;
+      }
+
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(.5);
+        opacity: .5;
+
+      }
+    }
+
+    @keyframes scal2 {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(.5);
+        opacity: .5;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+
+      }
+    }
+
+    .box4 {
+      background-color: #f1c40f;
+      position: absolute;
+      left: 775px;
+      top: 0;
+      box-sizing: border-box;
+
+    }
+
+    .box4 h4 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .box4 .frame {
+      width: 150px;
+      height: 50px;
+      border: 6px solid #000;
+      margin: 0 auto;
+      border-radius: 5px;
+      z-index: 2;
+
+    }
+
+    .box4 .mask {
+      width: 150px;
+      height: 50px;
+      position: absolute;
+      animation: run4 3s linear 0s infinite;
+    }
+
+    @keyframes run4 {
+      0% {
+        width: 0;
+        background-color: #e93306;
+      }
+
+      30% {
+        background-color: #e93306;
+
+      }
+
+      50% {
+
+        background-color: #fff;
+      }
+
+      70% {
+
+        background-color: #fff;
+      }
+
+
+      100% {
+        width: 150px;
+        background-color: #06e911;
+      }
+    }
+
+    .box5 {
+      background-color: #161616;
+      position: absolute;
+      left: 775px;
+      top: 200px;
+      overflow: hidden;
+    }
+
+    .box5 .groove {
+      height: 2px;
+      background-color: rgba(110, 107, 107, 0.411);
+      width: 100%;
+      position: absolute;
+      top: 100px;
+    }
+
+    .box5 .line {
+      height: 2px;
+      width: 100%;
+      top: 100px;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: #2187e7;
+      box-shadow: 0px 0px 15px 2px rgba(0, 198, 255, 0.7);
+      animation: run5 3s linear 0s infinite;
+
+    }
+
+    @keyframes run5 {
+      0% {
+        width: 0%;
+      }
+
+      25% {
+        width: 10%;
+      }
+
+      50% {
+        width: 40%;
+      }
+
+      75% {
+        width: 80%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    .box6 {
+      background-color: #f5f5f5;
+      position: absolute;
+      left: 375px;
+      top: 200px;
+    }
+
+    .box6 .circle1 {
+      width: 50px;
+      height: 50px;
+      background-color: #67cf22;
+      position: absolute;
+      top: 75px;
+      left: 75px;
+      border-radius: 50%;
+      transform: scale(1.5);
+      opacity: .5;
+      animation: run6_2 1s linear 0s infinite;
+    }
+
+    .box6 .circle2 {
+      width: 50px;
+      height: 50px;
+      background-color: #67cf22;
+      position: absolute;
+      top: 75px;
+      left: 75px;
+      border-radius: 50%;
+      transform: scale(0);
+      opacity: 1;
+      animation: run6_1 1s linear 0s infinite;
+    }
+
+    @keyframes run6_1 {
+      form {
+        transform: scale(0);
+        opacity: 1;
+
+      }
+
+      to {
+        transform: scale(1.5);
+        opacity: .5;
+
+      }
+
+    }
+
+    @keyframes run6_2 {
+      form {
+        transform: scale(1.5);
+        opacity: .5;
+      }
+
+      to {
+        transform: scale(0);
+        opacity: 1;
+      }
+    }
+
+    .canvas-svg {
+      width: 410px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .canvas-svg>div {
+      float: left;
+    }
+
+    .canvas-svg .svg1 {
+
+      background-color: #222428;
+      margin-right: 10px;
+    }
+
+    .canvas-svg .svg2 {
+
+
+      background-color: #222428;
+      position: relative;
+
+    }
+
+    .canvas-svg .svg2>div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(0);
+      animation: svg2-changed 2s linear infinite;
+      transform-origin: 50% 60%;
+    }
+
+    .canvas-svg .svg2>div:nth-child(1) {
+
+      animation-delay: 0s;
+    }
+
+    .canvas-svg .svg2>div:nth-child(2) {
+
+      animation-delay: .4s;
+    }
+
+    .canvas-svg .svg2>div:nth-child(3) {
+
+      animation-delay: .8s;
+    }
+
+    .canvas-svg .svg2>div:nth-child(4) {
+
+      animation-delay: 1.2s;
+    }
+
+    .canvas-svg .svg2>div:nth-child(5) {
+
+      animation-delay: 1.6s;
+    }
+
+    @keyframes svg2-changed {
+      from {
+        transform: scale(0);
+        opacity: 1;
+      }
+
+      to {
+        transform: scale(1.3);
+        opacity: 0;
+      }
+    }
+
+    .canvas {
+      width: 400px;
+      margin: 0 auto;
+
+
+    }
+
+    .canvas .mycanvas {
+      background-color: #222;
+      margin: 0 auto;
+      width: 400px;
+      height: 200px;
+    }
+
+    .box7 {
+      position: absolute;
+      top: 400px;
+      left: 375px;
+      background-color: #161616;
+    }
+
+    .box7 ul {
+      overflow: hidden;
+      height: 40px;
+      width: 130px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+
+    }
+
+    .box7 ul li {
+      float: left;
+      width: 20px;
+      height: 40px;
+      margin: 0 3px;
+      background-color: #000;
+    }
+
+    .box7 ul li .item {
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #8fdcfb, #2187e7);
+      transition: all .3s;
+      opacity: 0;
+      animation: run_7 1.5s linear infinite;
+      animation-delay: 2s;
+
+    }
+
+    .box7 ul li:nth-child(2) .item {
+      animation-delay: 2.4s;
+
+    }
+
+    .box7 ul li:nth-child(3) .item {
+      animation-delay: 2.8s;
+
+    }
+
+    .box7 ul li:nth-child(4) .item {
+      animation-delay: 3.2s;
+
+    }
+
+    .box7 ul li:nth-child(5) .item {
+      animation-delay: 3.6s;
+
+    }
+
+    @keyframes run_7 {
+      from {
+        /* width: 0%; */
+        opacity: 0;
+      }
+
+      to {
+        /* width: 100%; */
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stage">
+    <h4>css3动画</h4>
+    <div class="css3-animate">
+      <div class="box box1">
+        <div class="small">
+          <div class="smallbox"></div>
+          <div class="smallbox"></div>
+          <div class="smallbox"></div>
+          <div class="smallbox"></div>
+        </div>
+      </div>
+      <div class="box box2">
+        <div class="ring"></div>
+        <div class="ring2"></div>
+      </div>
+      <div class="box box3">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+
+      </div>
+      <div class="box box4">
+        <h4>LOADING</h4>
+        <div class="frame">
+          <div class="mask"></div>
+        </div>
+      </div>
+      <div class="box box5">
+        <div class="groove"></div>
+        <div class="line"></div>
+      </div>
+      <div class="box box6">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      <div class="box box7">
+        <ul>
+          <li>
+            <div class="item"></div>
+          </li>
+          <li>
+            <div class="item"></div>
+          </li>
+          <li>
+            <div class="item"></div>
+          </li>
+          <li>
+            <div class="item"></div>
+          </li>
+          <li>
+            <div class="item"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h4>svg&canvas动画</h4>
+    <div class="canvas-svg">
+      <div class="box svg1">
+        <svg width="200" height="200" viewbox="0 0 200 200">
+          <circle cx="100" cy="100" r="70" fill="none" stroke="#666" />
+          <circle cx="100" cy="100" r="55" fill="none" stroke="#666" />
+          <path d="M30 100  A 10 10 0 0 1 170 100" stroke="#2AA198" fill="none" stroke-width="5"
+            transform="rotate(0 50 50)">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 100 100"
+              to="360 100 100" dur="3s" repeatCount="indefinite" />
+          </path>
+
+          <path d="M45 100  A 10 10 0 0 1 156 100" stroke="#859900" fill="none" stroke-width="3">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 100 100"
+              to="360 100 100" dur="1s" repeatCount="indefinite" />
+          </path>
+          <text x="65" y="105" fill="#FFF" style="font-size:14px">LOADING</text>
+        </svg>
+      </div>
+      <div class="box svg2">
+        <div class="polygon1">
+          <svg width="200" height="200" viewbox="0 0 200 200 ">
+            <polygon points="50 150 150 150 100 50" style="fill:none" stroke="#007f7f" stroke-width="5" />
+          </svg>
+        </div>
+        <div class="polygon2">
+          <svg width="200" height="200" viewbox="0 0 200 200 ">
+            <polygon points="50 150 150 150 100 50" style="fill:none" stroke="#7f345a" stroke-width="5" />
+          </svg>
+        </div>
+        <div class="polygon3">
+          <svg width="200" height="200" viewbox="0 0 200 200 ">
+            <polygon points="50 150 150 150 100 50" style="fill:none" stroke="#324a76" stroke-width="5" />
+          </svg>
+        </div>
+        <div class="polygon4">
+          <svg width="200" height="200" viewbox="0 0 200 200 ">
+            <polygon points="50 150 150 150 100 50" style="fill:none" stroke="#7f7f00" stroke-width="5" />
+          </svg>
+        </div>
+        <div class="polygon5">
+          <svg width="200" height="200" viewbox="0 0 200 200 ">
+            <polygon points="50 150 150 150 100 50" style="fill:none" stroke="#7f7f7f" stroke-width="5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="canvas">
+      <canvas class="mycanvas"></canvas>
+    </div>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+  <script>
+    /**@type {HTMLCanvasElement}*/
+    let canvas = document.querySelector('.mycanvas');
+    let ctx = canvas.getContext('2d');
+    let frames = 0;
+    let spotArr = [];
+    let index = 0;
+    let colorArr = ['rgb(77,213,255)', 'rgb(179,43,255)', 'rgb(51,85,170)'];
+
+    function randomColor() {
+      return `rgba(${randomNum(50, 200, true)},${randomNum(50, 200, true)},${randomNum(50, 200, true)})`;
+    }
+
+    function randomNum(m, n) {
+      return Math.round(Math.random() * (n - m)) + m;
+    }
+    class Rect {
+      constructor({
+        x,
+        y,
+        w,
+        h,
+        fillStyle
+      }) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.fillStyle = fillStyle;
+
+      }
+      drawRect() {
+        ctx.beginPath()
+        ctx.fillStyle = this.fillStyle
+        ctx.rect(this.x, this.y, this.w, this.h);
+        ctx.fill()
+        ctx.closePath()
+
+      }
+      color(color) {
+        this.fillStyle = color
+      }
+      change() {
+        if (this.w == 200) {
+          this.w = 0
+          // spotArr=[]
+        }
+        this.w++
+      }
+
+    }
+
+    class Spot {
+      constructor({
+
+        x,
+
+        y,
+
+        color
+
+      }) {
+
+        this.x = x;
+
+        this.y = y;
+
+        this.r = 1;
+
+        this.color = color;
+
+        this.full = false;
+      }
+
+      drawSpot() {
+
+        ctx.beginPath()
+
+        ctx.fillStyle = this.color;
+
+        ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
+
+        ctx.fill();
+
+        ctx.closePath()
+
+      }
+      speed(vx = -1, vy = randomNum(2, 5)) {
+
+        this.vy = vy
+
+        this.vx = vx
+
+      }
+      move() {
+
+        this.y += this.vy
+        this.x += this.vx
+
+      }
+
+    }
+
+    let rect1 = new Rect({
+      x: 50,
+      y: 70,
+      w: 200,
+      h: 10,
+      fillStyle: '#000'
+    })
+    rect1.drawRect()
+    let rect2 = new Rect({
+      x: 50,
+      y: 70,
+      w: 0,
+      h: 10,
+      fillStyle: colorArr[0]
+    })
+
+    function start() {
+
+      frames++;
+
+      let rect1 = new Rect({
+
+        x: 50,
+
+        y: 70,
+
+        w: 200,
+
+        h: 10,
+
+        fillStyle: '#000'
+
+      })
+
+      rect1.drawRect()
+
+      rect2.change()
+      if (!(frames % 120)) {
+        // rect2.fillStyle=randomColor()
+        rect2.fillStyle = `rgb(240,${randomNum(50,250)},105)`
+      }
+      // rect2.fillStyle=`rgb(240,${randomNum(50,200)},105)`
+
+      rect2.drawRect()
+
+      if (!(frames % 1)) {
+
+        let spot = new Spot({
+
+          x: rect2.w + 50,
+
+          y: randomNum(60, 75),
+
+          color: randomColor()
+
+        })
+
+        spot.speed()
+
+
+        spotArr.push(spot)
+
+
+      }
+      spotArr.forEach((item, index) => {
+
+
+        if (item.y == canvas.height) {
+
+          item.speed(-1, 0)
+          item.r = 2
+          item.fillStyle = randomColor()
+
+        }
+        item.move()
+
+
+        item.drawSpot()
+
+
+        if (item.x < 0) {
+
+          spotArr.splice(index, 1)
+
+        }
+
+      });
+
+
+    }
+
+
+    setInterval(() => {
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      start();
+
+
+    }, 30);
+  </script>
+</body>
+
+</html>

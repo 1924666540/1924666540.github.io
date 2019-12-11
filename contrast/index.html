@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>对比</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #d1d1de;
+    }
+
+    .wrap {
+      width: 600px;
+      height: 248px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .wrap div {
+      width: 600px;
+      height: 248px;
+    }
+
+    .wrap div.before {
+      width: 50%;
+      background: url('./imgs/VFX-before.jpg');
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .wrap div.after {
+      width: 100%;
+      background: url('./imgs/VFX-after.jpg');
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .auto-img {
+      width: 100%;
+      display: block;
+    }
+
+    .wrap .slider {
+      width: 4px;
+      height: 248px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 300px;
+      transition: position .3s;
+      box-shadow: 1px 1px 3px #000;
+    }
+
+    .wrap .layer {
+      width: 100%;
+      height: 248px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: w-resize;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="after"></div>
+    <div class="before"></div>
+    <div class="slider"></div>
+    <div class="layer"></div>
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+
+      $('.layer').mouseenter(function () {
+
+        $(this).mousemove(function (e) {
+
+          $('.slider').css({
+
+            left: e.offsetX
+
+          })
+
+          $('.before').css({
+
+            width: e.offsetX
+
+          })
+
+        })
+
+      })
+
+      $('.layer').mouseleave(function () {
+
+        $('.slider').css({
+
+          left: 300
+
+        })
+
+        $('.before').css({
+
+          width: '50%'
+
+        })
+
+      })
+
+    })
+  </script>
+
+</body>
+
+</html>

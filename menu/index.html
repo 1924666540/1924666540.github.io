@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>菜单</title>
+  <style>
+    body {
+      background-color: #666;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    div.menu-body {
+      width: 260px;
+      background-color: #ed5565;
+      margin: 10px auto;
+    }
+
+    .header {
+      padding: 10px 20px;
+    }
+
+    .header input {
+      outline: none;
+      border: 1px solid #fff;
+      background: none;
+      width: 100%;
+      border-radius: 25px;
+      padding: 6px 10px;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    .menu-list .menu-item {
+
+      color: #fff;
+      font-size: 13px;
+      line-height: 20px;
+      cursor: pointer;
+      border-bottom: 1px solid #DA4453;
+    }
+
+    .menu-list .menu-item div {
+      padding: 10px 20px;
+
+    }
+
+    .menu-list .menu-item-footer {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .menu-list .menu-item div i {
+      margin-right: 20px;
+    }
+
+    .menu-list .menu-item div span {
+      transition: all .3s;
+      float: right;
+    }
+
+    .menu-list .menu-item:nth-child(3) div span {
+      background-color: #fff;
+      color: #222;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .menu-list .menu-item:nth-child(4) div span,
+    .menu-list .menu-item:nth-child(6) div span {
+      width: 16px;
+      height: 16px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 2px;
+      line-height: 16px;
+    }
+
+    .menu-item:nth-child(6) .submenu div span {
+      font-size: 12px;
+      background-color: #fff;
+      color: #333;
+      border-radius: 50%;
+      padding: 2px;
+    }
+
+    .menu-list li.active {
+      background-color: #DA4453;
+    }
+
+    .menu-list .menu-item:hover {
+      background-color: #DA4453;
+    }
+
+    .submenu {
+      background-color: #383838;
+      font-size: 12px;
+      color: #fff;
+      display: none;
+      padding-left: 20px;
+    }
+
+    .menu-item .submenu li.item span {
+      font-weight: normal;
+      transform: rotate(0deg);
+    }
+
+    .three-level {
+      padding-left: 20px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-body">
+    <div class="header">
+      <input type="text">
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <div><i class="fa fa-home"></i>Home</div>
+      </li>
+      <li class="menu-item">
+        <div><i class="fa fa-glass"></i>Events</div>
+      </li>
+      <li class="menu-item">
+        <div>
+          <i class="fa fa-file-image-o"></i>Gallery <span>12</span>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div>
+          <i class="fa fa-cog"></i>Services <span data-index="0">+</span>
+        </div>
+        <ul class="submenu">
+          <li>
+            <div>Web Design</div>
+          </li>
+          <li>
+            <div>Hosting</div>
+          </li>
+          <li class="item">
+            <div>
+              Design <span data-index="0">+</span>
+            </div>
+            <ul class="three-level">
+              <li>
+                <div>Graphics </div>
+              </li>
+              <li>
+                <div>Vectors </div>
+              </li>
+              <li>
+                <div>Photoshop</div>
+              </li>
+              <li>
+                <div>Fonts</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>Consulting</div>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <div>
+          <i class="fa fa-home"></i>系统管理
+        </div>
+      </li>
+      <li class="menu-item">
+        <div>
+          <i class="fa fa-suitcase"></i>Portfolio <span data-index="0">+</span>
+        </div>
+        <ul class="submenu">
+          <li>
+            <div>Web Design</div>
+          </li>
+          <li>
+            <div>Graphics <span>10</span></div>
+          </li>
+          <li>
+            <div>Photoshop </div>
+          </li>
+          <li>
+            <div>Programming </div>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <div><i class="fa fa-user"></i>About </div>
+      </li>
+      <li class="menu-item">
+        <div>
+          <i class="fa fa-envelope"></i>Contact
+        </div>
+      </li>
+      <li class="menu-item menu-item-footer">
+        <div>Footer</div>
+      </li>
+    </ul>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+  <script>
+    $(function () {
+      $('.menu-list .menu-item').children('div').on('click', function () {
+        if ($(this).parent().find('.submenu')[0]) {
+          if ($(this).find('span').data('index') == 0) {
+            $(this).find('span').data('index', '1');
+            $(this).find('span').css({
+              transform: 'rotate(45deg)'
+            })
+          } else {
+            $(this).find('span').data('index', '0');
+            $(this).find('span').css({
+              transform: 'rotate(0deg)'
+            })
+          }
+          $(this).parent().find('.submenu').slideToggle()
+        }
+      })
+      $('.submenu .item>div').on('click', function () {
+        if ($(this).find('span').data('index') == 0) {
+          $(this).find('span').data('index', '1');
+          $(this).find('span').css({
+            transform: 'rotate(45deg)'
+          })
+        } else {
+          $(this).find('span').data('index', '0');
+          $(this).find('span').css({
+            transform: 'rotate(0deg)'
+          })
+        }
+        $(this).siblings('.three-level').slideToggle()
+      })
+    })
+  </script>
+
+</body>
+
+</html>

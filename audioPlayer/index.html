@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>音乐播放器</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="audio-player">
+    <div class="show">
+      <audio class="my-audio" src="http://music.163.com/song/media/outer/url?id=525241230.mp3"></audio>
+      <div class="information">
+        <div class="musicName">狐狸</div>
+        <div class="auther">薛之谦</div>
+      </div>
+      <div class="bar">
+        <div class="track"></div>
+        <div class="mask"></div>
+        <div class="slider"></div>
+        <div class="cover"></div>
+      </div>
+      <div class="time">
+        <div class="newTime">00:00</div>
+        <div class="totalTime">00:00</div>
+      </div>
+    </div>
+    <ul class="controls">
+      <li><span class="prev fa fa-backward"></span></li>
+      <li>
+        <span class="fa fa-play active"></span>
+        <span class="fa fa-pause"></span>
+      </li>
+      <li><span  class="next fa fa-forward"></span></li>
+      <li><span class="fa fa-bars"></span></li>
+    </ul>
+    <ul class="list">
+      <!-- <li class="active">
+        <div class="img">
+          <img class="auto-img" src="" alt="">
+        </div>
+        <div class="discrib">
+          <div class="name">狐狸</div>
+          <div class="auther">薛之谦</div>
+        </div>
+      </li> -->
+    </ul>
+
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

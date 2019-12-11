@@ -9,7 +9,7 @@
 ![种地](./img/cultivation.png "种地")
 
 ***
-## 模拟京东图放大镜效果
+## 模拟京东图片放大镜效果
 
 ### 主要技术点：HTML、CSS、jquery
 

@@ -2,7 +2,9 @@
 ***
 ## 种地网页
 
->*主要技术点：HTML、CSS*
+>**主要技术点：**
++ HTML
++ CSS
 
 >[点击这里查看详情](https://1924666540.github.io/cultivation/index.html " ")
 
@@ -11,7 +13,10 @@
 ***
 ## 模拟京东图片放大镜效果
 
->*主要技术点：HTML、CSS、jquery*
+>**主要技术点：**
++ HTML
++ CSS
++ jquery
 
 >[点击这里查看详情](https://1924666540.github.io/amplifier/index.html " ")
 
@@ -20,7 +25,10 @@
 ***
 ## 图片对比效果
 
->*主要技术点：HTML、CSS、jquery*
+>**主要技术点：**
++ HTML
++ CSS
++ jquery
 
 >[点击这里查看详情](https://1924666540.github.io/contrast/index.html " ")
 
@@ -29,7 +37,10 @@
 ***
 ## 简易音乐播放器
 
->*主要技术点：HTML5、CSS3、jquery、less*
+>**主要技术点：**
++ HTML5
++ CSS:less
++ jquery
 
 >[点击这里查看详情](https://1924666540.github.io/audioPlayer/index.html " ")
 
@@ -38,7 +49,12 @@
 ***
 ## 响应式网页
 
->*主要技术点：HTML5、CSS3、jquery、less、bootstrap*
+>**主要技术点：**
++ HTML5
++ CSS3
++ jquery
++ less
++ bootstrap
 
 >### DEMO1
 

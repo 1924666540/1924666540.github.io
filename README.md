@@ -8,7 +8,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/cultivation/index.html " ")
 
->![种地](https://1924666540.github.io/img/cultivation.png " ")
+>![种地](./img/cultivation.png " ")
 
 ***
 ## 菜单栏
@@ -19,7 +19,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/menu/index.html " ")
 
->![菜单](https://1924666540.github.io/img/menu.png " ")
+>![菜单](./img/menu.png " ")
 
 ***
 ## 模拟京东图片放大镜效果
@@ -31,7 +31,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/amplifier/index.html " ")
 
->![放大镜](https://1924666540.github.io/img/amplifier.png " ")
+>![放大镜](./img/amplifier.png " ")
 
 ***
 ## 图片对比效果
@@ -42,7 +42,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/contrast/index.html " ")
 
->![图片对比](https://1924666540.github.io/img/contrast.png " ")
+>![图片对比](./img/contrast.png " ")
 
 ***
 ##  全屏滚动
@@ -54,7 +54,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/FSS/index.html " ")
 
->![全屏滚动](https://1924666540.github.io/img/FSS.png " ")
+>![全屏滚动](./img/FSS.png " ")
 
 ***
 
@@ -68,7 +68,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/ihover/index.html " ")
 
->![ihover](https://1924666540.github.io/img/ihover.png " ")
+>![ihover](./img/ihover.png " ")
 
 ***
 ## 简易音乐播放器
@@ -81,7 +81,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/audioPlayer/index.html " ")
 
->![拖放](https://1924666540.github.io/img/audioPlayer.png " ")
+>![拖放](./img/audioPlayer.png " ")
 
 ***
 ## H5简易拖放列表
@@ -93,7 +93,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/drag_drop/index.html " ")
 
->![拖放列表](https://1924666540.github.io/img/drag_drop.png " ")
+>![拖放列表](./img/drag_drop.png " ")
 
 ***
 
@@ -106,7 +106,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/loading/index.html " ")
 
->![loading](https://1924666540.github.io/img/loading.png " ")
+>![loading](./img/loading.png " ")
 
 ***
 
@@ -120,7 +120,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/MSN/index.html " ")
 
->![环信IM模拟qq即时通讯](https://1924666540.github.io/img/MSN.png " ")
+>![环信IM模拟qq即时通讯](./img/MSN.png " ")
 
 ***
 ## 响应式网页
@@ -137,19 +137,19 @@
 
 >[查看详情](https://1924666540.github.io/projects/bootstrapDemo/demo1/index.html " ")
 
->![demo1](https://1924666540.github.io/img/demo1.png " ")
+>![demo1](./img/demo1.png " ")
 
 >### DEMO2
 
 >[查看详情](https://1924666540.github.io/projects/bootstrapDemo/demo2/index.html " ")
 
->![demo2](https://1924666540.github.io/img/demo2.png " ")
+>![demo2](./img/demo2.png " ")
 
 >### DEMO3
 
 >[查看详情](https://1924666540.github.io/projects/bootstrapDemo/demo3/index.html " ")
 
->![demo3](https://1924666540.github.io/img/demo3.png " ")
+>![demo3](./img/demo3.png " ")
 
 
 

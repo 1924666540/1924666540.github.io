@@ -6,7 +6,7 @@
 >+ HTML
 >+ CSS
 
->[查看详情](https://1924666540.github.io/cultivation/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/cultivation/index.html " ")
 
 >![种地](./img/cultivation.png " ")
 
@@ -17,7 +17,7 @@
 >+ HTML
 >+ CSS：transform、transition
 
->[查看详情](https://1924666540.github.io/menu/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/menu/index.html " ")
 
 >![菜单](./img/menu.png " ")
 
@@ -29,7 +29,7 @@
 >+ CSS：posiiton、opacity
 >+ jquery
 
->[查看详情](https://1924666540.github.io/amplifier/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/amplifier/index.html " ")
 
 >![放大镜](./img/amplifier.png " ")
 
@@ -40,7 +40,7 @@
 >+ CSS:posiiton、transition、boxshadow
 >+ jquery
 
->[查看详情](https://1924666540.github.io/contrast/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/contrast/index.html " ")
 
 >![图片对比](./img/contrast.png " ")
 
@@ -52,7 +52,7 @@
 >+ CSS:position、transition、transform
 >+ jquery:自定义动画animate
 
->[查看详情](https://1924666540.github.io/FSS/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/FSS/index.html " ")
 
 >![全屏滚动](./img/FSS.png " ")
 
@@ -66,7 +66,7 @@
 >+ less
 >+ jquery
 
->[查看详情](https://1924666540.github.io/ihover/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/ihover/index.html " ")
 
 >![全屏滚动](./img/ihover.png " ")
 
@@ -79,7 +79,7 @@
 >+ less
 >+ jquery
 
->[查看详情](https://1924666540.github.io/audioPlayer/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/audioPlayer/index.html " ")
 
 >![拖放](./img/audioPlayer.png " ")
 
@@ -91,7 +91,7 @@
 >+ CSS:position、transition
 >+ jquery
 
->[查看详情](https://1924666540.github.io/drag_drop/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/drag_drop/index.html " ")
 
 >![拖放列表](./img/drag_drop.png " ")
 
@@ -104,7 +104,7 @@
 >+ CSS:position、transition、animation
 >+ JavaScript
 
->[查看详情](https://1924666540.github.io/loading/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/loading/index.html " ")
 
 >![loading](./img/loading.png " ")
 
@@ -118,7 +118,7 @@
 >+ JavaScript
 >+ 环信IM开发文档
 
->[查看详情](https://1924666540.github.io/MSN/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/MSN/index.html " ")
 
 >![环信IM模拟qq即时通讯](./img/MSN.png " ")
 
@@ -135,19 +135,19 @@
 
 >### DEMO1
 
->[查看详情](https://1924666540.github.io/bootstrapDemo/demo1/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/bootstrapDemo/demo1/index.html " ")
 
 >![demo1](./img/demo1.png " ")
 
 >### DEMO2
 
->[查看详情](https://1924666540.github.io/bootstrapDemo/demo2/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/bootstrapDemo/demo2/index.html " ")
 
 >![demo2](./img/demo2.png " ")
 
 >### DEMO3
 
->[查看详情](https://1924666540.github.io/bootstrapDemo/demo3/index.html " ")
+>[查看详情](https://1924666540.github.io/projects/bootstrapDemo/demo3/index.html " ")
 
 >![demo3](./img/demo3.png " ")
 

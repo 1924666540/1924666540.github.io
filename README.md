@@ -29,7 +29,7 @@
 ***
 ## 简易音乐播放器
 
-### 主要技术点：HTML5、CSS3、jquery
+### 主要技术点：HTML5、CSS3、jquery、less
 
 [点击这里查看详情](https://1924666540.github.io/audioPlayer/index.html " ")
 
@@ -38,7 +38,7 @@
 ***
 ## 响应式网页
 
-#### 主要技术点：HTML5、CSS3、jquery、bootstrap
+#### 主要技术点：HTML5、CSS3、jquery、less、bootstrap
 
 ### DEMO1
 
@@ -52,7 +52,7 @@
 
 ![音乐播放器](./img/demo2.png " ")
 
-### DEMO2
+### DEMO3
 
 [点击这里查看详情](https://1924666540.github.io/bootstrapDemo/demo3/index.html " ")
 

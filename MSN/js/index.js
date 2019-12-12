@@ -230,8 +230,8 @@ function addFriendListEvent() {
       }
       //清空未读消息
       // document.getElementsByClassName('one-text')[1].innerHTML = '';
-
       
+      getId('slogan').style.display = 'none';
 
       var activeLi = document.querySelector('#innerbox>li.active');
       if (activeLi) {
@@ -366,6 +366,7 @@ window.onload = function () {
         console.log('img ==> ', img);
 
         getId('input-content').appendChild(img);
+        
       }
     }
   }
@@ -511,7 +512,9 @@ window.onload = function () {
 
   //取消添加好友
   getId('cancel').onclick = function () {
+    getId('userid').value=''
     getId('add-friend').style.display = 'none';
+    
   }
 
   //确认添加好友
@@ -526,6 +529,7 @@ window.onload = function () {
       // Demo里面接收方没有展现出来这个message，在status字段里面
       message: '膜拜你很久了，我是你的黑粉'
     });
+    getId('userid').value=''
   }
 
   //同意好友申请
@@ -628,6 +632,7 @@ window.onload = function () {
   //关闭当前聊天面板
   getId('close-btn').onclick = function () {
     console.log(this);
+    getId('slogan').style.display = 'block';
     getId('chat-right').style.display = 'none';
     document.getElementsByClassName('clearfix active')[0].className = 'clearfix';
     document.getElementsByClassName('title')[0].textContent = '企鹅大侠';

@@ -74,7 +74,7 @@
 ## 简易音乐播放器
 
 >**使用技术：**
->+ HTML5:audio
+>+ HTML:audio
 >+ CSS3:transform、transition
 >+ less
 >+ jquery
@@ -87,7 +87,7 @@
 ## H5简易拖放列表
 
 >**使用技术：**
->+ HTML5：drag、drop
+>+ HTML：drag、drop
 >+ CSS:position、transition
 >+ jquery
 
@@ -100,7 +100,7 @@
 ## loading特效
 
 >**使用技术：**
->+ HTML5:canvas、内联svg
+>+ HTML:canvas、内联svg
 >+ CSS:position、transition、animation
 >+ JavaScript
 
@@ -113,7 +113,7 @@
 ## 环信IM模拟qq即时通讯
 
 >**使用技术：**
->+ HTML
+>+ HTML：localStorage
 >+ CSS:position
 >+ JavaScript
 >+ 环信IM开发文档

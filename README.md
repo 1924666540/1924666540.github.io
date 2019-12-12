@@ -14,6 +14,7 @@
 ## 模拟京东图片放大镜效果
 
 >**使用技术：**
+>+ HTML
 >+ CSS：posiiton、opacity
 >+ jquery
 
@@ -31,6 +32,32 @@
 >[点击这里查看详情](https://1924666540.github.io/contrast/index.html " ")
 
 >![图片对比](./img/contrast.png " ")
+
+***
+##  全屏滚动
+
+>**使用技术：**
+>+ HTML
+>+ CSS:position、transition、transform
+>+ jquery:自定义动画animate
+
+>[点击这里查看详情](https://1924666540.github.io/FSS/index.html " ")
+
+>![全屏滚动](./img/FSS.png " ")
+
+***
+
+##  ihover特效
+
+>**使用技术：**
+>+ HTML
+>+ CSS:position、transition、transform、opacity
+>+ less
+>+ jquery
+
+>[点击这里查看详情](https://1924666540.github.io/ihover/index.html " ")
+
+>![全屏滚动](./img/ihover.png " ")
 
 ***
 ## 简易音乐播放器

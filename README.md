@@ -68,7 +68,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/ihover/index.html " ")
 
->![全屏滚动](./img/ihover.png " ")
+>![ihover](./img/ihover.png " ")
 
 ***
 ## 简易音乐播放器

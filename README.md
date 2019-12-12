@@ -43,7 +43,7 @@
 
 >[点击这里查看详情](https://1924666540.github.io/audioPlayer/index.html " ")
 
->![音乐播放器](./img/audioPlayer.png " ")
+>![拖放](./img/drag_drop.png " ")
 
 ***
 ## H5简易拖放列表

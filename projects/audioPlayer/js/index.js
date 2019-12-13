@@ -79,6 +79,7 @@ $(function () {
     var secound = parseInt(duration % 60) < 10 ? '0' + parseInt(duration % 60) : parseInt(duration % 60);
     $('.time .totalTime').html(`${minutes}:${secound}`)
     $('.list li').click(function () {
+      $('.list').slideUp()
       if ($(this).hasClass('active')) {
         return;
       }

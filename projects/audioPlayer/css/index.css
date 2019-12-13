@@ -60,13 +60,14 @@ ul {
 }
 .audio-player .show .bar .mask {
   height: 5px;
-  width: 0;
+  width: 0px;
   background-color: #ff6666;
   background-image: radial-gradient(#f55c5c, #f0a61e);
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   transition: all 0.3s;
 }
 .audio-player .show .bar .slider {
@@ -74,8 +75,7 @@ ul {
   height: 8px;
   background-color: #fff;
   position: absolute;
-  top: -1px;
-  left: -5px;
+  top: -1.5px;
   border-radius: 50%;
   transition: all 0.3s;
 }

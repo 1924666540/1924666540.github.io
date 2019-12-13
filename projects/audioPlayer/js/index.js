@@ -56,39 +56,28 @@ $.each(musicData, function (index, value) {
     <div class="auther">${value.author}</div>
   </div>
 </li>`);
-
   }
 })
-
 $(function () {
-
   var duration = 0;
   var currentTime = 0;
-
   $('.my-audio')[0].onended = function () {
     //列表循环
-
-    console.log('jieshu')
-
     if ($('.list li.active').index() == $('.list li').length - 1) {
       $('.my-audio').attr('src', $('.list li').eq(0).data('src'))
       $('.list li').eq(0).addClass('active').siblings().removeClass('active')
-     
     } else {
       $('.my-audio').attr('src', $('.list li').eq($('.list li.active').index() + 1).data('src'))
       $('.list li').eq($('.list li.active').index() + 1).addClass('active').siblings().removeClass('active')
     }
     change()
-    
   }
   $('.my-audio')[0].oncanplay = function () {
-
     duration = this.duration;
     currentTime = this.currentTime;
     var minutes = parseInt(duration / 60) < 10 ? '0' + parseInt(duration / 60) : parseInt(duration / 60);
     var secound = parseInt(duration % 60) < 10 ? '0' + parseInt(duration % 60) : parseInt(duration % 60);
     $('.time .totalTime').html(`${minutes}:${secound}`)
-
     $('.list li').click(function () {
       if ($(this).hasClass('active')) {
         return;
@@ -110,36 +99,26 @@ $(function () {
         animationPlayState: 'running'
       })
     })
-
     $('.my-audio')[0].ontimeupdate = function () {
-      
- 
-        duration = $('.my-audio')[0].duration;
+      duration = $('.my-audio')[0].duration;
       currentTime = $('.my-audio')[0].currentTime;
       var rate = currentTime / duration;
       var minutes = parseInt(currentTime / 60) < 10 ? '0' + parseInt(currentTime / 60) : parseInt(currentTime / 60)
       var secound = parseInt(currentTime % 60) < 10 ? '0' + parseInt(currentTime % 60) : parseInt(currentTime % 60)
-
-        $('.time .newTime').html(`${minutes}:${secound}`)
+      $('.time .newTime').html(`${minutes}:${secound}`)
       $('.mask').width(rate * $('.bar').width())
       $('.slider').css({
         left: rate * ($('.bar').width() - $('.slider').width())
       })
-    
-
     }
-
   }
-  $('.cover').on('mousedown',function(e){
- 
+  $('.cover').on('mousedown', function (e) {
     $('.mask').width(e.offsetX)
     $('.slider').css({
       left: e.offsetX
     })
-    $('.my-audio')[0].currentTime=(e.offsetX/$(this).width())*$('.my-audio')[0].duration;
-
+    $('.my-audio')[0].currentTime = (e.offsetX / $(this).width()) * $('.my-audio')[0].duration;
   })
-
   $('.fa-play').on('click', function () {
     $('img.playing').css({
       animationPlayState: 'running'
@@ -147,9 +126,7 @@ $(function () {
     $('.my-audio')[0].play()
     $(this).removeClass('active')
     $('.fa-pause').addClass('active');
-    
   })
-
   $('.fa-pause').on('click', function () {
     $('.my-audio')[0].pause();
     $(this).removeClass('active');
@@ -157,52 +134,31 @@ $(function () {
     $('img.playing').css({
       animationPlayState: 'paused'
     })
-   
   })
-
   $('.fa-bars').click(function () {
-
     $('.list').slideToggle()
   })
-
   $('.fa-backward').on('click', function () {
-
     if ($('.list li.active').index() == 0) {
       $('.my-audio').attr('src', $('.list li').eq($('.list li').length - 1).data('src'))
-
       $('.list li').eq($('.list li').length - 1).addClass('active').siblings().removeClass('active')
-    
     } else {
-
       $('.my-audio').attr('src', $('.list li').eq($('.list li.active').index() - 1).data('src'))
-      $('.list li').eq($('.list li.active').index() - 1).addClass('active').siblings().removeClass('active')
-    
+      $('.list li').eq($('.list li.active').index() - 1).addClass('active').sibling().removeClass('active')
     }
-
     change()
-
   })
-
   $('.fa-forward').on('click', function () {
-
     if ($('.list li.active').index() == $('.list li').length - 1) {
-
       $('.my-audio').attr('src', $('.list li').eq(0).data('src'))
       $('.list li').eq(0).addClass('active').siblings().removeClass('active')
-     
     } else {
-
       $('.my-audio').attr('src', $('.list li').eq($('.list li.active').index() + 1).data('src'))
       $('.list li').eq($('.list li.active').index() + 1).addClass('active').siblings().removeClass('active')
-
     }
-
     change()
-
   })
-
   function change() {
-
     $('.my-audio')[0].play();
     $('.fa-play').removeClass('active')
     $('.fa-pause').addClass('active')
@@ -216,6 +172,5 @@ $(function () {
     })
     $('.show').find('.musicName').html($('.list li.active').find('.name').html())
     $('.show').find('.auther').html($('.list li.active').find('.auther').html())
-
   }
 });

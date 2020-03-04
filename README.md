@@ -1,4 +1,20 @@
 # 个人案例及项目
+
+***
+
+## 开眼视频
+
+>**使用技术：**
+
+>+ HTML：localStorage
+>+ CSS:position
+>+ JavaScript
+>+ Vue.js+axios
+
+>[查看详情](https://1924666540.github.io/projects/openEyes/index.html " ")
+
+>![环信IM模拟qq即时通讯](https://1924666540.github.io/img/openeyes.png " ")
+
 ***
 ## 种地网页
 
@@ -175,19 +191,6 @@
 
 >![demo3](https://1924666540.github.io/img/demo3.png " ")
 
-***
 
-## 开眼视频
-
->**使用技术：**
-
->+ HTML：localStorage
->+ CSS:position
->+ JavaScript
->+ Vue.js+axios
-
->[查看详情](https://1924666540.github.io/projects/openEyes/index.html " ")
-
->![环信IM模拟qq即时通讯](https://1924666540.github.io/img/openeyes.png " ")
 
 

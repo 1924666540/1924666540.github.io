@@ -7,7 +7,7 @@
 >**使用技术：**
 
 >+ HTML：localStorage
->+ CSS:position
+>+ CSS:position、CSS3多列
 >+ JavaScript
 >+ Vue.js+axios+Vant
 
@@ -22,7 +22,7 @@
 >**使用技术：**
 
 >+ HTML：localStorage
->+ CSS:position、
+>+ CSS:position、CSS3多列
 >+ JavaScript
 >+ Vue.js+axios
 

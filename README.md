@@ -2,20 +2,36 @@
 
 ***
 
-## 开眼视频
+## 开眼视频移动端
 
 >**使用技术：**
 
 >+ HTML：localStorage
 >+ CSS:position
 >+ JavaScript
->+ Vue.js+axios
+>+ Vue.js+axios+Vant
 
 >[查看详情](https://1924666540.github.io/projects/openEyes/index.html " ")
 
->![环信IM模拟qq即时通讯](https://1924666540.github.io/img/openeyes.png " ")
+>![开眼视频](https://1924666540.github.io/img/openeyes.png " ")
 
 ***
+
+## 网易云音乐移动端
+
+>**使用技术：**
+
+>+ HTML：localStorage
+>+ CSS:position、
+>+ JavaScript
+>+ Vue.js+axios
+
+>[查看详情](https://1924666540.github.io/projects/neteaseMusic/index.html " ")
+
+>![网易云音乐](https://1924666540.github.io/img/neteaseMusic.png " ")
+
+***
+
 ## 种地网页
 
 >**使用技术：**

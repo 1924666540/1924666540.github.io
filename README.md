@@ -13,7 +13,7 @@
 
 >[查看详情](https://1924666540.github.io/projects/openEyes/index.html " ")
 
->![开眼视频](https://1924666540.github.io/img/openeyes.png " ")
+>![开眼视频](https://1924666540.github.io/img/openeyes.png "开眼视频")
 
 ***
 
